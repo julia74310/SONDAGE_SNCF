@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/IdLogoSCNF"
+        android:layout_width="405dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sncf_logo" />
+
+    <ImageButton
+        android:id="@+id/IdRerB"
+        android:layout_width="107dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="42dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IdRerA"
+        app:layout_constraintTop_toBottomOf="@+id/IdLogoSCNF"
+        app:srcCompat="@drawable/rerb" />
+
+    <ImageButton
+        android:id="@+id/IdRerA"
+        android:layout_width="103dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="77dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdLogoSCNF"
+        app:srcCompat="@drawable/rera" />
+
+    <ImageButton
+        android:id="@+id/IdRerE"
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="386dp"
+        android:layout_marginEnd="154dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdLogoSCNF"
+        app:srcCompat="@drawable/rerf" />
+
+    <ImageButton
+        android:id="@+id/IdRerD"
+        android:layout_width="106dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="43dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IdRerC"
+        app:layout_constraintTop_toBottomOf="@+id/IdRerB"
+        app:srcCompat="@drawable/rerd" />
+
+    <ImageButton
+        android:id="@+id/IdRerC"
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdRerA"
+        app:srcCompat="@drawable/rerc" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="71dp"
+        android:background="#BE1860"
+        android:backgroundTint="#BC1864"
+        android:text="Application SNCF - 2023"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdRerE" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

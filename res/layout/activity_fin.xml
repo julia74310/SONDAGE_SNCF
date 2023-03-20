@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fin">
+
+    <ImageView
+        android:id="@+id/idLogoSCNF4"
+        android:layout_width="405dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sncf_logo" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="437dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="11dp"
+        android:background="#BE1860"
+        android:backgroundTint="#BC1864"
+        android:text="Application SNCF - 2023"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idRetour" />
+
+    <ImageView
+        android:id="@+id/idSmiley"
+        android:layout_width="169dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="121dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMoyenne"
+        app:srcCompat="@drawable/smily" />
+
+    <TextView
+        android:id="@+id/idMoyenne"
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="1dp"
+        android:text="Votre moyenne:"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLogoSCNF4" />
+
+    <ListView
+        android:id="@+id/idListe"
+        android:layout_width="410dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSmiley" />
+
+    <Button
+        android:id="@+id/idRetour"
+        android:layout_width="412dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="18dp"
+        android:text="Retour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idListe" />
+</androidx.constraintlayout.widget.ConstraintLayout>

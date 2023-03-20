@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="437dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="9dp"
+        android:background="#BE1860"
+        android:backgroundTint="#BC1864"
+        android:text="Application SNCF - 2023"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSuivant2" />
+
+    <ImageView
+        android:id="@+id/idLogoSCNF3"
+        android:layout_width="405dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sncf_logo" />
+
+    <Button
+        android:id="@+id/idSuivant2"
+        android:layout_width="414dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="9dp"
+        android:text="Suivant"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idInformation" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="346dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="35dp"
+        android:text="Votre avis sur l'information ?"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProprete" />
+
+    <RadioGroup
+        android:id="@+id/idInformation"
+        android:layout_width="339dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <RadioButton
+            android:id="@+id/idInformation1"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="Très satisfait" />
+
+        <RadioButton
+            android:id="@+id/idInformation2"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idInformation3"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="Insufisant" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/idProprete"
+        android:layout_width="329dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <RadioButton
+            android:id="@+id/idProprete1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Très satisfait" />
+
+        <RadioButton
+            android:id="@+id/idProprete2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Satisfait" />
+
+        <RadioButton
+            android:id="@+id/idProprete3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insufisant" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="51dp"
+        android:text="Votre avis sur la propreté ?"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLogoSCNF3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
